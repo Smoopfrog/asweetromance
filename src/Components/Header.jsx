@@ -3,7 +3,7 @@ import "../Styles/Header.css";
 const Header = () => {
   return (
     <header className="header">
-      <h1>A Sweet Romance</h1>
+      <h1 className="header-title">A Sweet Romance</h1>
       <nav>
         <ul className="nav-list">
           <li>
@@ -14,6 +14,11 @@ const Header = () => {
           <li>
             <a className="nav-link" href="#">
               About
+            </a>
+          </li>
+          <li>
+            <a className="nav-link" href="#">
+              Locations
             </a>
           </li>
           <li>

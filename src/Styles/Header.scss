@@ -1,8 +1,48 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  transform: translateX(0);
+  transition: transform 0.3s;
 }
 
-.nav-list{
+.nav-list {
   display: flex;
+  list-style-type: none;
+  transform: translateX(0);
+  transition: transform 0.3s;
+  gap: 4rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative;
+
+  transform: translateX(0);
+  transition: transform 0.3s;
+}
+
+.nav-link:visited,
+.nav-link:link {
+  color: black;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 99.9%;
+  height: 0.1em;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  transform: translate3d(-30%, 0, 0);
+}
+
+.nav-link:hover::after,
+.nav-link:active::after {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
 }

@@ -1,4 +1,4 @@
-import "../Styles/Header.css"
+import "../Styles/Header.css";
 
 const Header = () => {
   return (
@@ -7,13 +7,19 @@ const Header = () => {
       <nav>
         <ul className="nav-list">
           <li>
-            <a href="#">Contact</a>
+            <a className="nav-link" href="#">
+              Contact
+            </a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a className="nav-link" href="#">
+              About
+            </a>
           </li>
           <li>
-            <a href="#">Something</a>
+            <a className="nav-link" href="#">
+              Something
+            </a>
           </li>
         </ul>
       </nav>

@@ -12,22 +12,43 @@
      object-fit: cover;
 }
 
-.arrow {
+.right-arrow {
   position: absolute;
   top: 50%;
-}
-
-.right-arrow {
+  transform: translateY(-50%);
   right: 0;
 }
 
 .left-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
 }
 
-.pause-button {
+.hero-page-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+}
+
+.hero-page-btn:hover {
+  cursor: pointer;
+}
+
+.pause-btn {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.hero-page-btn-svg {
+  width: 48px;
+  height: 48px;
+  stroke: white;
+  fill: white;
 }/*# sourceMappingURL=HeroPage.css.map */

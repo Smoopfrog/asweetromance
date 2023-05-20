@@ -8,8 +8,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1s;
 }
 
+.show {
+  opacity: 1;
+}
 .right-arrow {
   position: absolute;
   top: 50%;

@@ -1,15 +1,56 @@
 import "../Styles/HeroPage.css";
 import cake from "../Assets/cake.jpg";
+import macarons from "../Assets/macarons.jpg";
+import pie from "../Assets/pie.jpg";
+import cupcakes from "../Assets/cupcakes.jpg";
+import { useState } from "react";
+
+const backgrounds = [
+  { img: cake, alt: "Delicious looking, colorful birthday cake" },
+  { img: macarons, alt: "A collection of multicolored macarons" },
+  { img: pie, alt: "A rustic looking pie" },
+  {
+    img: cupcakes,
+    alt: "An assortment of cupcakes",
+  },
+];
 
 const HeroPage = () => {
+  const [carouselIndex, setCarouselIndex] = useState(0);
+
+  const nextIndex = () => {
+    if (carouselIndex === 0) {
+      setCarouselIndex(backgrounds.length - 1);
+      return;
+    }
+
+    setCarouselIndex(carouselIndex - 1);
+  };
+
+  const prevIndex = () => {
+    if (carouselIndex === backgrounds.length - 1) {
+      setCarouselIndex(0);
+      return;
+    }
+
+    setCarouselIndex(carouselIndex + 1);
+  };
+
   return (
     <section className="hero-page">
-      <img
-        className="hero-page-img"
-        src={cake}
-        alt="Delicious looking, colorful birthday cake"
-      />
-      <button className="hero-page-btn left-arrow">
+      {backgrounds.map((background, index) => {
+        return (
+          <img
+            className={
+              index === carouselIndex ? "hero-page-img show" : "hero-page-img"
+            }
+            src={background.img}
+            alt={background.alt}
+            key={index}
+          />
+        );
+      })}
+      <button onClick={prevIndex} className="hero-page-btn left-arrow">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -24,7 +65,7 @@ const HeroPage = () => {
           </g>
         </svg>
       </button>
-      <button className="hero-page-btn right-arrow">
+      <button onClick={nextIndex} className="hero-page-btn right-arrow">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -42,17 +83,11 @@ const HeroPage = () => {
       <button className="hero-page-btn pause-btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          id="pause"
           className="hero-page-btn-svg"
+          fill="none"
+          id="pause"
         >
-          <g data-name="Layer 2">
-            <g data-name="pause-circle">
-              <rect width="24" height="24" opacity="0"></rect>
-              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
-              <path d="M15 8a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1zM9 8a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z"></path>
-            </g>
-          </g>
+          <path d="M8 5a2 2 0 0 0-2 2v10a2 2 0 1 0 4 0V7a2 2 0 0 0-2-2zm8 0a2 2 0 0 0-2 2v10a2 2 0 1 0 4 0V7a2 2 0 0 0-2-2z"></path>
         </svg>
       </button>
     </section>

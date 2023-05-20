@@ -9,6 +9,13 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1s;
+}
+
+.show {
+  opacity: 1;
 }
 
 .right-arrow {

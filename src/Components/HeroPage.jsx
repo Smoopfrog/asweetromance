@@ -19,21 +19,21 @@ const HeroPage = () => {
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const nextIndex = () => {
-    if (carouselIndex === 0) {
-      setCarouselIndex(backgrounds.length - 1);
-      return;
-    }
-
-    setCarouselIndex(carouselIndex - 1);
-  };
-
-  const prevIndex = () => {
     if (carouselIndex === backgrounds.length - 1) {
       setCarouselIndex(0);
       return;
     }
 
     setCarouselIndex(carouselIndex + 1);
+  };
+
+  const prevIndex = () => {
+    if (carouselIndex === 0) {
+      setCarouselIndex(backgrounds.length - 1);
+      return;
+    }
+
+    setCarouselIndex(carouselIndex - 1);
   };
 
   return (
@@ -51,7 +51,7 @@ const HeroPage = () => {
         );
       })}
       <button onClick={prevIndex} className="hero-page-btn left-arrow">
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           id="back-arrow"
@@ -63,10 +63,10 @@ const HeroPage = () => {
               data-name="arrow-ios-back"
             ></path>
           </g>
-        </svg>
+        </svg> */}
       </button>
       <button onClick={nextIndex} className="hero-page-btn right-arrow">
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           id="forward-arrow"
@@ -78,9 +78,9 @@ const HeroPage = () => {
               data-name="arrow-ios-forward"
             ></path>
           </g>
-        </svg>
+        </svg> */}
       </button>
-      <button className="hero-page-btn pause-btn">
+      {/* <button className="hero-page-btn pause-btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="hero-page-btn-svg"
@@ -89,7 +89,24 @@ const HeroPage = () => {
         >
           <path d="M8 5a2 2 0 0 0-2 2v10a2 2 0 1 0 4 0V7a2 2 0 0 0-2-2zm8 0a2 2 0 0 0-2 2v10a2 2 0 1 0 4 0V7a2 2 0 0 0-2-2z"></path>
         </svg>
-      </button>
+      </button> */}
+      <div className="carousel-btns">
+        {backgrounds.map((background, index) => {
+          return (
+            <svg
+              className={
+                index === carouselIndex ? "circle carousel-selected" : "circle grey"
+              }
+              key={index}
+              onClick={() => setCarouselIndex(index)}
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="50" cy="50" r="50" />
+            </svg>
+          );
+        })}
+      </div>
     </section>
   );
 };

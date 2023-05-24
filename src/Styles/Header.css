@@ -10,7 +10,7 @@
 
 .header-title {
   font-weight: 400;
-  padding: 1rem 0;
+  padding: 1.6rem 0;
 }
 
 .header-title,
@@ -47,7 +47,7 @@
   height: 0.1em;
   background-color: #8D6D44;
   opacity: 0;
-  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 500ms;
   transform: translate3d(-30%, 0, 0);
 }
 

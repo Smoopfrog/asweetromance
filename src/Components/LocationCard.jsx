@@ -14,7 +14,7 @@ const LocationCard = () => {
           Peachland Farmers and Crafters Market
         </h1>
         <div className="location-time">
-          <div className="location-date">Friday &nbsp;</div>
+          <div className="location-date">Friday</div>
           <div className="location-hours">9am-2pm</div>
         </div>
         <div className="location-address">

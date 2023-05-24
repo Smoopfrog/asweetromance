@@ -4,6 +4,10 @@
   align-items: center;
   width: 25%;
   border-radius: 5px;
+  transition: all 0.2s ease-in;
+}
+
+.location-card:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -35,6 +39,7 @@
 
 .location-date {
   font-weight: 300;
+  padding-right: 4px;
 }
 
 .location-hours {

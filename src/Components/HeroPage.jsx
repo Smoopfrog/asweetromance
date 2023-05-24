@@ -3,7 +3,7 @@ import cake from "../Assets/cake.jpg";
 import macarons from "../Assets/macarons.jpg";
 import pie from "../Assets/pie.jpg";
 import cupcakes from "../Assets/cupcakes.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const backgrounds = [
   { img: cake, alt: "Delicious looking, colorful birthday cake" },
@@ -17,6 +17,20 @@ const backgrounds = [
 
 const HeroPage = () => {
   const [carouselIndex, setCarouselIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      if (carouselIndex === backgrounds.length - 1) {
+        setCarouselIndex(0);
+        return;
+      }
+      setCarouselIndex(carouselIndex + 1);
+    }, 5000);
+
+    return () => {
+      clearInterval(id);
+    };
+  }, [carouselIndex]);
 
   const nextIndex = () => {
     if (carouselIndex === backgrounds.length - 1) {
@@ -95,7 +109,9 @@ const HeroPage = () => {
           return (
             <svg
               className={
-                index === carouselIndex ? "circle carousel-selected" : "circle grey"
+                index === carouselIndex
+                  ? "circle carousel-selected"
+                  : "circle grey"
               }
               key={index}
               onClick={() => setCarouselIndex(index)}

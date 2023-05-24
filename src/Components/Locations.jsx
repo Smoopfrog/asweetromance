@@ -5,7 +5,11 @@ const Locations = () => {
   return (
     <sectio className="locations-container">
       <h1 className="locations-title">Our Locations</h1>
-      <LocationCard />
+      <div className="location-cards">
+        <LocationCard />
+        <LocationCard />
+        <LocationCard />
+      </div>
     </sectio>
   );
 };

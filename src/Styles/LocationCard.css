@@ -1,6 +1,31 @@
 .location-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 25%;
-  padding: 2rem;
   border-radius: 5px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.location-img {
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.location-title {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.location-time {
+  display: flex;
+  gap: 12px;
+}
+
+.location-date {
+  font-weight: 300;
+}
+
+.location-hours {
+  font-weight: 500;
 }/*# sourceMappingURL=LocationCard.css.map */

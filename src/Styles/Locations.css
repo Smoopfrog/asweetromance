@@ -1,8 +1,15 @@
+.locations-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .locations-title {
   padding: 3rem;
   font-weight: 400;
   font-size: 1.3rem;
   text-decoration: underline;
   color: #b48d59;
-  text-align: center;
-}/*# sourceMappingURL=Locations.css.map */
+  /* text-align: center; */
+} /*# sourceMappingURL=Locations.css.map */

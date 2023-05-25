@@ -3,6 +3,7 @@ import Banner from "./Components/Banner";
 import Header from "./Components/Header";
 import HeroPage from "./Components/HeroPage";
 import Locations from "./Components/Locations";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Banner />
       <Locations />
+      <Footer />
     </div>
   );
 }

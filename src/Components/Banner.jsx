@@ -1,9 +1,10 @@
 import "../Styles/Banner.css";
+import banner from "../Assets/banner.webp";
 
 const Banner = () => {
   return (
     <div className="banner">
-      <div>hello</div>
+      <img className="banner-img" src={banner} alt="" />
     </div>
   );
 };

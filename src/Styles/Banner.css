@@ -1,5 +1,10 @@
 .banner {
-  height: 124px;
   width: 100%;
-  background-color: pink;
+}
+
+.banner-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=Banner.css.map */

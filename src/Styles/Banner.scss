@@ -1,5 +1,9 @@
 .banner {
-  height: 124px;
   width: 100%;
-  background-color: pink;
+}
+
+.banner-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }

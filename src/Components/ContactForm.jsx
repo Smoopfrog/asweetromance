@@ -3,10 +3,10 @@ import "../Styles/ContactForm.css";
 const ContactForm = () => {
   return (
     <form className="contact-form">
-      <h1>Contact Us!</h1>
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-      <input type="text" placeholder="Message" />
+      <h1 className="contact-title">Contact Us!</h1>
+      <input className="contact-input" type="text" placeholder="Name" />
+      <input className="contact-input" type="email" placeholder="Email" />
+      <textarea className="contact-input contact-input-msg" type="text" placeholder="Message" />
       <div>email something blah blah blah blah</div>
       <button>Send</button>
     </form>

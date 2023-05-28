@@ -7,22 +7,42 @@ const Header = () => {
       <nav>
         <ul className="nav-list">
           <li>
-            <a className="nav-link" href="#">
+            <a
+              className="nav-link"
+              href="https://github.com/Smoopfrog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Contact
             </a>
           </li>
           <li>
-            <a className="nav-link" href="#">
+            <a
+              className="nav-link"
+              href="https://github.com/Smoopfrog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               About
             </a>
           </li>
           <li>
-            <a className="nav-link" href="#">
+            <a
+              className="nav-link"
+              href="https://github.com/Smoopfrog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Locations
             </a>
           </li>
           <li>
-            <a className="nav-link" href="#">
+            <a
+              className="nav-link"
+              href="https://github.com/Smoopfrog"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Something
             </a>
           </li>

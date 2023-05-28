@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import HeroPage from "./Components/HeroPage";
 import Locations from "./Components/Locations";
 import Footer from "./Components/Footer";
+import ContactForm from "./Components/ContactForm";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Banner />
       <Locations />
+      <ContactForm />
       <Footer />
     </div>
   );

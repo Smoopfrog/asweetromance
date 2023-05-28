@@ -8,7 +8,7 @@ const ContactForm = () => {
 
   const sendEmail = (event) => {
     event.preventDefault();
-    
+
     const emailContent = {
       name,
       email,
@@ -20,7 +20,7 @@ const ContactForm = () => {
 
   return (
     <form className="contact-form">
-      <h1 className="contact-title">Contact Us!</h1>
+      <h1 className="contact-title">Contact Us</h1>
       <input
         className="contact-input"
         type="text"

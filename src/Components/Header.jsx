@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import "../Styles/Header.css";
 
 const Header = () => {
   return (
     <header className="header">
-      <h1 className="header-title">A Sweet Romance</h1>
+      <Link className="nav-link" to="/">
+        A Sweet Romance
+      </Link>
       <nav>
         <ul className="nav-list">
           <li>
@@ -17,14 +20,9 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a
-              className="nav-link"
-              href="https://github.com/Smoopfrog"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link className="nav-link" to="/about">
               About
-            </a>
+            </Link>
           </li>
           <li>
             <a

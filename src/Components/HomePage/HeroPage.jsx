@@ -1,8 +1,8 @@
-import "../Styles/HeroPage.css";
-import cake from "../Assets/cake.jpg";
-import macarons from "../Assets/macarons.jpg";
-import pie from "../Assets/pie.jpg";
-import cupcakes from "../Assets/cupcakes.jpg";
+import "../../Styles/HeroPage.css";
+import cake from "../../Assets/cake.jpg";
+import macarons from "../../Assets/macarons.jpg";
+import pie from "../../Assets/pie.jpg";
+import cupcakes from "../../Assets/cupcakes.jpg";
 import { useEffect, useState } from "react";
 
 const backgrounds = [

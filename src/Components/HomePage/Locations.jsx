@@ -1,4 +1,4 @@
-import "../Styles/Locations.css";
+import "../../Styles/Locations.css";
 import LocationCard from "./LocationCard";
 
 const Locations = () => {

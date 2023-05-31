@@ -1,22 +1,14 @@
-import About from "./Components/About";
-import Banner from "./Components/Banner";
 import Header from "./Components/Header";
-import HeroPage from "./Components/HeroPage";
-import Locations from "./Components/Locations";
 import Footer from "./Components/Footer";
-import ContactForm from "./Components/ContactForm";
 import AboutPage from "./Components/AboutPage/AboutPage";
+import HomePage from "./Components/HomePage/HomePage";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <HeroPage />
-      <About />
-      <Banner />
-      <Locations />
-      <ContactForm /> */}
-      <AboutPage />
+      <HomePage />
+      {/* <AboutPage /> */}
       <Footer />
     </div>
   );

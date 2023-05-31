@@ -1,5 +1,5 @@
-import "../Styles/LocationCard.css";
-import peachland from "../Assets/peachland.webp";
+import "../../Styles/LocationCard.css";
+import peachland from "../../Assets/peachland.webp";
 
 const LocationCard = () => {
   return (

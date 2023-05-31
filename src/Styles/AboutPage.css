@@ -1,15 +1,27 @@
 .about-page {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .about-page-article {
   display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #be7f36;
+}
+
+.about-page-article:nth-child(2n) {
+  flex-direction: row-reverse;
 }
 
 .about-page-img {
   display: flex;
-  width: 50%;
+  width: 40%;
   height: auto;
 }/*# sourceMappingURL=AboutPage.css.map */

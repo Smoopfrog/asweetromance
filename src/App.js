@@ -5,16 +5,18 @@ import HeroPage from "./Components/HeroPage";
 import Locations from "./Components/Locations";
 import Footer from "./Components/Footer";
 import ContactForm from "./Components/ContactForm";
+import AboutPage from "./Components/AboutPage/AboutPage";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <HeroPage />
+      {/* <HeroPage />
       <About />
       <Banner />
       <Locations />
-      <ContactForm />
+      <ContactForm /> */}
+      <AboutPage />
       <Footer />
     </div>
   );

@@ -1,3 +1,19 @@
 .error-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15% 0;
+  color: #766456;
+}
 
+.error-page-title {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.error-page-text {
+  font-size: 16px;
+  text-decoration: none;
+  font-style: italic;
+  color: #766456;
 }

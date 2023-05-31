@@ -1,5 +1,6 @@
 .about-page {
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin: 0 auto;
   width: 80%;
@@ -24,4 +25,22 @@
   display: flex;
   width: 40%;
   height: auto;
+}
+
+.about-page-btn {
+  margin: 48px 0;
+  padding: 12px;
+  color: hotpink;
+  background-color: rgb(249, 227, 231);
+  border: solid 1px hotpink;
+  border-radius: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  transition: background-color 0.5s;
+}
+
+.about-page-btn:hover {
+  cursor: pointer;
+  background-color: rgb(251, 202, 211);
 }/*# sourceMappingURL=AboutPage.css.map */

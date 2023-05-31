@@ -22,6 +22,7 @@ const AboutPage = () => {
           cupiditate quibusdam.
         </p>
       </article>
+      <button className="about-page-btn">Contact Us</button>
     </section>
   );
 };

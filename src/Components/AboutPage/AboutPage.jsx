@@ -1,11 +1,11 @@
-import "../AboutPage/AboutPage";
+import "../../Styles/AboutPage.css";
 import couplePic from "../../Assets/cuties.jpg";
 
 const AboutPage = () => {
   return (
     <section className="about-page">
-      <article>
-        <img src={couplePic} alt="a bunch of cuties" />
+      <article className="about-page-article">
+        <img className="about-page-img" src={couplePic} alt="a bunch of cuties" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
           veniam nam reiciendis architecto dolorem voluptatem quo sint facere
@@ -13,8 +13,8 @@ const AboutPage = () => {
           cupiditate quibusdam.
         </p>
       </article>
-      <article>
-        <img src={couplePic} alt="a bunch of cuties" />
+      <article className="about-page-article">
+        <img className="about-page-img" src={couplePic} alt="a bunch of cuties" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
           veniam nam reiciendis architecto dolorem voluptatem quo sint facere

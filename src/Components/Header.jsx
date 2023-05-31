@@ -10,18 +10,13 @@ const Header = () => {
       <nav>
         <ul className="nav-list">
           <li>
-            <a
-              className="nav-link"
-              href="https://github.com/Smoopfrog"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Contact
-            </a>
-          </li>
-          <li>
             <Link className="nav-link" to="/about">
               About
+            </Link>
+          </li>
+          <li>
+            <Link className="nav-link" to="/contact">
+              Contact
             </Link>
           </li>
           <li>

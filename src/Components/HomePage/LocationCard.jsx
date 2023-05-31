@@ -11,7 +11,14 @@ const LocationCard = () => {
       />
       <div className="location-info">
         <h1 className="location-title">
-          Peachland Farmers and Crafters Market
+          <a
+            href="https://www.peachlandfarmersandcraftersmarket.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="location-title-link"
+          >
+            Peachland Farmers and Crafters Market
+          </a>
         </h1>
         <div className="location-time">
           <div className="location-date">Friday</div>

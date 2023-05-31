@@ -30,6 +30,11 @@
   font-size: 20px;
 }
 
+.location-title-link:link, .location-title-link:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .location-time {
   display: flex;
   font-size: 16px;

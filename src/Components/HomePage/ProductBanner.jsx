@@ -5,9 +5,9 @@ const ProductBanner = () => {
   return (
     <div className="product-banner">
       <img className="product-banner-img" src={cake} alt="Delicious strawberry cheesecake" />
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button>Shop Cakes</button>
+      <div className="product-banner-article">
+        <p className="product-banner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button className="product-banner-btn">Shop Cakes</button>
       </div>
     </div>
   );

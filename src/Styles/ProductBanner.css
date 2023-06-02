@@ -2,10 +2,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: goldenrod;
+  background-color: #ffecc7;
 }
 
 .product-banner-img {
   padding: 32px;
   max-width: 30%;
+}
+
+.product-banner-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.product-banner-text {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #f783ac;
+}
+
+.product-banner-btn {
+  padding: 12px;
+  color: hotpink;
+  background-color: rgb(249, 227, 231);
+  border: solid 1px hotpink;
+  border-radius: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  transition: background-color 0.5s;
+}
+
+.product-banner-btn {
+  cursor: pointer;
+  background-color: rgb(251, 202, 211);
 }/*# sourceMappingURL=ProductBanner.css.map */

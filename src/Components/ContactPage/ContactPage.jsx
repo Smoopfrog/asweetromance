@@ -4,8 +4,8 @@ import Locations from "../HomePage/Locations";
 const ContactPage = () => {
   return (
     <>
-      <Locations />
       <ContactForm />
+      <Locations />
     </>
   );
 };

@@ -100,6 +100,17 @@ const Header = () => {
             <li>
               <Link
                 className="nav-link"
+                to="/"
+                onClick={() => {
+                  setShowAside(false);
+                }}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="nav-link"
                 to="/about"
                 onClick={() => {
                   setShowAside(false);

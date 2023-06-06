@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  text-align: center;
+  width: 75%;
   gap: 24px;
 }
 
@@ -19,10 +20,10 @@
 .about-btn {
   padding: 12px;
 
-  color: hotpink;
-  background-color: rgb(249, 227, 231);
+  color: #D1B000;
+  background-color: rgb(255, 248, 208);
 
-  border: solid 1px hotpink;
+  border: solid 1px #D1B000;
   border-radius: 16px;
 
   text-transform: uppercase;
@@ -34,5 +35,5 @@
 
 .about-btn:hover {
   cursor: pointer;
-  background-color: rgb(251, 202, 211);
+  background-color: gold;
 }

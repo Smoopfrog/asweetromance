@@ -5,6 +5,7 @@ import HomePage from "./Components/HomePage/HomePage";
 import { Route, Routes } from "react-router-dom";
 import ContactPage from "./Components/ContactPage/ContactPage";
 import ErrorPage from "./Components/ErrorPage";
+import "./App.css";
 
 function App() {
   return (

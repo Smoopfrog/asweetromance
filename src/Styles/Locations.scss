@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .locations-title {
@@ -20,5 +21,6 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
+  width: 100%;
+  overflow-x: auto;
 }

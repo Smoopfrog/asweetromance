@@ -7,8 +7,8 @@ const Locations = () => {
       <h1 className="locations-title">Visit Us</h1>
       <div className="location-cards">
         <LocationCard />
-        <LocationCard />
-        <LocationCard />
+        {/* <LocationCard />
+        <LocationCard /> */}
       </div>
     </section>
   );

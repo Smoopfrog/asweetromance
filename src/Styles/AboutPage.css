@@ -18,21 +18,20 @@
 
 .about-page-article {
   display: flex;
+  flex-direction: column;
   font-size: 24px;
   font-weight: 300;
   color: #484848;
-  padding: 64px;
+  padding: 48px;
 }
 
 .about-page-img {
   display: flex;
-  width: 50%;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 100%;
+  margin-bottom: 32px;
 }
 
 .about-page-text {
-  padding: 0 48px;
   margin: 0 auto;
   font-size: 18px;
   letter-spacing: 1.4px;
@@ -41,13 +40,12 @@
 }
 
 .about-page-text-title {
-  margin-bottom: 16px;
   font-style: italic;
   color: #cba276;
 }
 
 .about-page-btn {
-  margin: 48px 0;
+  margin-bottom: 48px;
   padding: 12px;
   color: hotpink;
   background-color: rgb(249, 227, 231);

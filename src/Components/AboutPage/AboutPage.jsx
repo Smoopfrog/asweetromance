@@ -12,7 +12,7 @@ const AboutPage = () => {
           alt="a bunch of cuties"
         />
         <div className="about-page-text">
-          <h2 className="about-page-text-title">Something Something</h2>
+          <h2 className="about-page-text-title">Our Sweet Romance</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
             veniam nam reiciendis architecto dolorem voluptatem quo sint facere

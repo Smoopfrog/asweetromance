@@ -2,12 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #ffecc7;
 }
 
 .product-banner-img {
   padding: 32px;
-  max-width: 30%;
+  max-width: 70%;
 }
 
 .product-banner-article {
@@ -22,7 +23,7 @@
   margin-bottom: 24px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   font-family: sans-serif;
   text-align: center;
   color: #f783ac;
@@ -30,6 +31,7 @@
 
 .product-banner-btn {
   padding: 12px;
+  margin-bottom: 32px;
   color: hotpink;
   background-color: rgb(249, 227, 231);
   border: solid 1px hotpink;
@@ -40,7 +42,7 @@
   transition: background-color 0.5s;
 }
 
-.product-banner-btn {
+.product-banner-btn:hover {
   cursor: pointer;
   background-color: rgb(251, 202, 211);
 }/*# sourceMappingURL=ProductBanner.css.map */

@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   height: 64px;
-  
+
   padding: 0 4rem;
   background-color: #fff0f6;
 
@@ -27,12 +27,12 @@
   text-transform: uppercase;
 }
 
-.header-menu-btn{
+.header-menu-btn {
   border: none;
   background-color: transparent;
 }
 
-.header-menu-icon{
+.header-menu-icon {
   width: 24px;
   height: 24px;
 }
@@ -53,18 +53,13 @@
 
   background-color: rgb(240, 255, 255);
 
-  transform: translateX(0);
-  transition: transform 0.3s;
-}
-
-.show-nav {
-  visibility: visible;
-  transform: translateX(0);
+  transition: all 0.3s;
+  transform: scale(1, 1);
+  transform-origin: 100% 50%;
 }
 
 .hide-nav {
-  width: 0;
-  transform: translateX(100%);
+  transform: scale(0, 1);
 }
 
 .nav-list {
@@ -105,4 +100,3 @@
   transform: translate3d(0, 0, 0);
   opacity: 0.3;
 }
-

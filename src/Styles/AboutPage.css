@@ -45,6 +45,9 @@
 }
 
 .about-page-btn {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
   margin-bottom: 48px;
   padding: 12px;
   color: hotpink;

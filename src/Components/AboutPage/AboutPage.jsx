@@ -1,5 +1,6 @@
 import "../../Styles/AboutPage.css";
 import couplePic from "../../Assets/cuties.jpg";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   return (
@@ -22,7 +23,9 @@ const AboutPage = () => {
           </p>
         </div>
       </article>
-      <button className="about-page-btn">Contact Us</button>
+      <Link className="about-page-btn" to="/Contact">
+        Contact Us
+      </Link>
     </section>
   );
 };

@@ -14,18 +14,19 @@ const Header = () => {
   const toggleNav = () => {
     setShowAside(!showAside);
   };
-  
+
   return (
     <header className="header">
       <Link className="nav-link" to="/">
         A Sweet Romance
       </Link>
       {mobileView ? (
-        <button onClick={toggleNav} className="menu-button">
+        <button onClick={toggleNav} className="header-menu-btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             id="menu-bar"
+            className="header-menu-icon"
           >
             <rect width="24" height="24" fill="none"></rect>
             <path
@@ -70,6 +71,44 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+      )}
+      {mobileView && (
+        <aside
+          className={`header-links ${showAside ? "show-nav" : "hide-nav"}`}
+        >
+          <ul className="nav-list">
+            <li>
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className="nav-link" to="/contact">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <a
+                className="nav-link"
+                href="https://github.com/Smoopfrog"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Locations
+              </a>
+            </li>
+            <li>
+              <a
+                className="nav-link"
+                href="https://github.com/Smoopfrog"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Something
+              </a>
+            </li>
+          </ul>
+        </aside>
       )}
     </header>
   );

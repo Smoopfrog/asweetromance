@@ -55,6 +55,7 @@
 }
 
 .hide-nav {
+  width: 0;
   transform: translateX(100%);
 }
 

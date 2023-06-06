@@ -17,7 +17,13 @@ const Header = () => {
 
   return (
     <header className="header">
-      <Link className="nav-link" to="/">
+      <Link
+        className="nav-link"
+        to="/"
+        onClick={() => {
+          setShowAside(false);
+        }}
+      >
         A Sweet Romance
       </Link>
       {mobileView ? (
@@ -40,34 +46,48 @@ const Header = () => {
         <nav>
           <ul className="nav-list">
             <li>
-              <Link className="nav-link" to="/about">
+              <Link
+                className="nav-link"
+                to="/about"
+                onClick={() => {
+                  setShowAside(false);
+                }}
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to="/contact">
+              <Link
+                className="nav-link"
+                to="/contact"
+                onClick={() => {
+                  setShowAside(false);
+                }}
+              >
                 Contact
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="nav-link"
-                href="https://github.com/Smoopfrog"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Locations
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link"
-                href="https://github.com/Smoopfrog"
-                target="_blank"
-                rel="noopener noreferrer"
+                to="/"
+                onClick={() => {
+                  setShowAside(false);
+                }}
               >
                 Something
-              </a>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="nav-link"
+                to="/"
+                onClick={() => {
+                  setShowAside(false);
+                }}
+              >
+                Something
+              </Link>
             </li>
           </ul>
         </nav>
@@ -78,34 +98,48 @@ const Header = () => {
         >
           <ul className="nav-list">
             <li>
-              <Link className="nav-link" to="/about">
+              <Link
+                className="nav-link"
+                to="/about"
+                onClick={() => {
+                  setShowAside(false);
+                }}
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link className="nav-link" to="/contact">
+              <Link
+                className="nav-link"
+                to="/contact"
+                onClick={() => {
+                  setShowAside(false);
+                }}
+              >
                 Contact
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="nav-link"
-                href="https://github.com/Smoopfrog"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Locations
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link"
-                href="https://github.com/Smoopfrog"
-                target="_blank"
-                rel="noopener noreferrer"
+                to="/"
+                onClick={() => {
+                  setShowAside(false);
+                }}
               >
                 Something
-              </a>
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="nav-link"
+                to="/"
+                onClick={() => {
+                  setShowAside(false);
+                }}
+              >
+                Something
+              </Link>
             </li>
           </ul>
         </aside>

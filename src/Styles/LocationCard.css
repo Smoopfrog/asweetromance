@@ -2,9 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 100%;
+  margin: 0 2rem;
   border-radius: 5px;
   transition: all 0.2s ease-in;
+}
+
+.location-card:first-child {
+  margin-left: 4rem;
 }
 
 .location-card:hover {
@@ -16,7 +21,7 @@
 }
 
 .location-info {
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,13 +35,13 @@
   font-size: 20px;
 }
 
-.location-title-link:link, .location-title-link:visited {
+.location-title-link:link,
+.location-title-link:visited {
   text-decoration: none;
   color: black;
 }
 
 .location-time {
-  display: flex;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 2px;

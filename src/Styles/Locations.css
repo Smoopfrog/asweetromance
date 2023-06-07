@@ -20,7 +20,6 @@
 .location-cards {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   width: 100%;
   overflow-x: auto;
 }/*# sourceMappingURL=Locations.css.map */

@@ -6,18 +6,13 @@
   justify-content: space-between;
   height: 64px;
 
-  padding: 0 4rem;
+  padding: 0 2rem;
   background-color: #fff0f6;
 
   z-index: 3;
 
   position: sticky;
   top: 0;
-}
-
-.header-title {
-  font-weight: 400;
-  padding: 1.6rem 0;
 }
 
 .header-title,
@@ -29,15 +24,20 @@
   text-transform: uppercase;
 }
 
+.header-title:link {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 1.6rem 0;
+}
+
 .header-menu-btn {
   border: none;
   background-color: transparent;
 }
 
 .header-menu-icon {
-  width: 24px;
-  height: 24px;
-  stroke: #7c603c;
+  height: 42px;
+  fill: #7c603c;
 }
 
 .header-links {
@@ -51,7 +51,7 @@
 
   height: 100vh;
   width: 100vw;
-  padding-top: 20%;
+  padding-top: 10%;
   font-size: 36px;
 
   background-color: rgb(240, 255, 255);
@@ -83,7 +83,7 @@
 .nav-link:link {
   color: #8d6d44;
   padding: 2px 0;
-  font-size: 16px;
+  // font-size: 16px;
 }
 
 .nav-link::after {

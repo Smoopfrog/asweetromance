@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header className="header">
       <Link
-        className="nav-link"
+        className="nav-link header-title"
         to="/"
         onClick={() => {
           setShowAside(false);

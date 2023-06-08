@@ -1,3 +1,5 @@
+@import "./Variables.scss";
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -39,7 +41,7 @@
 .contact-btn {
   padding: 12px;
   width: 100%;
-  
+
   color: hotpink;
   background-color: rgb(249, 227, 231);
 
@@ -56,4 +58,25 @@
 .contact-btn:hover {
   cursor: pointer;
   background-color: rgb(251, 202, 211);
+}
+
+// @media screen and (min-width: $breakpoint-small) {
+// }
+
+@media screen and (min-width: $breakpoint-medium) {
+  .contact-form {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+  .contact-form {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xlarge) {
+  .contact-form {
+    width: 50%;
+  }
 }

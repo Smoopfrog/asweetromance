@@ -100,6 +100,15 @@
   opacity: 0.3;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0 4rem;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 992px) {
   .header {
     padding: 0 4rem;

@@ -6,7 +6,7 @@ const Header = () => {
   const [showAside, setShowAside] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth < 576) {
+    if (window.innerWidth < 768) {
       setMobileView(true);
     }
   }, []);

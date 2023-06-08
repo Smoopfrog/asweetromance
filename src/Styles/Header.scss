@@ -110,8 +110,16 @@
 // @media screen and (min-width: $breakpoint-medium) {
 // }
 
-// @media screen and (min-width: $breakpoint-large) {
-// }
+@media screen and (min-width: $breakpoint-large) {
+  .header {
+    padding: 0 4rem;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 // @media screen and (min-width: $breakpoint-xlarge) {
 // }

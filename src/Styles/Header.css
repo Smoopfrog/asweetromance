@@ -98,4 +98,14 @@
 .nav-link:hover::after {
   transform: translate3d(0, 0, 0);
   opacity: 0.3;
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    padding: 0 4rem;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=Header.css.map */

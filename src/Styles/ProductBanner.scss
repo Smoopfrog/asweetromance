@@ -1,3 +1,5 @@
+@import "./Variables.scss";
+
 .product-banner {
   display: flex;
   align-items: center;
@@ -50,3 +52,30 @@
   cursor: pointer;
   background-color: rgb(251, 202, 211);
 }
+
+// @media screen and (min-width: $breakpoint-small) {
+// }
+
+@media screen and (min-width: $breakpoint-medium) {
+  .product-banner {
+    flex-direction: row;
+  }
+
+  .product-banner-img {
+    padding: 32px;
+    max-width: 30%;
+    height: auto;
+  }
+
+  .product-banner-article {
+    width: 40%;
+  }
+}
+
+
+
+// @media screen and (min-width: $breakpoint-large) {
+// }
+
+// @media screen and (min-width: $breakpoint-xlarge) {
+// }

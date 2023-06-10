@@ -1,3 +1,5 @@
+@import "./Variables.scss";
+
 .admin-page {
   display: flex;
   justify-content: center;
@@ -45,4 +47,28 @@
 .admin-page-btn:hover {
   cursor: pointer;
   background-color: rgb(251, 202, 211);
+}
+
+@media screen and (min-width: $breakpoint-small) {
+  .admin-login-form {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  .admin-login-form {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+  .admin-login-form {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xlarge) {
+  .admin-login-form {
+    width: 20%;
+  }
 }

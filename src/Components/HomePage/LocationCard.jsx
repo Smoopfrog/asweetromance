@@ -1,12 +1,11 @@
 import "../../Styles/LocationCard.css";
-import peachland from "../../Assets/peachland.webp";
 
 const LocationCard = ({ location }) => {
   return (
     <article className="location-card">
       <img
         className="location-img"
-        src={peachland}
+        src={location.img}
         alt="A lovely day showcasing the peachland welcome sign"
       />
       <div className="location-info">

@@ -1,9 +1,12 @@
 import "../../Styles/Locations.css";
 import LocationCard from "./LocationCard";
+import kelownaImg from "../../Assets/kelownaFarmersMarket.jpg";
+import peachlandImg from "../../Assets/peachlandFarmersMarket.jpg";
 
 const locationData = [
   {
     name: "The Kelowna Farmers’ and Crafters’ Market",
+    img: kelownaImg,
     location: {
       address: "1992 Dilworth Dr",
       city: "Kelowna",
@@ -13,6 +16,7 @@ const locationData = [
   },
   {
     name: "Peachland Farmers and Crafters Market",
+    img: peachlandImg,
     location: {
       address: "Heritage Park, Beach Ave",
       city: "Peachland",

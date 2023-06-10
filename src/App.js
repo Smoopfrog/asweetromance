@@ -5,6 +5,7 @@ import HomePage from "./Components/HomePage/HomePage";
 import { Route, Routes } from "react-router-dom";
 import ContactPage from "./Components/ContactPage/ContactPage";
 import ErrorPage from "./Components/ErrorPage";
+import AdminPage from "./Components/AdminPage";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/admin" element={<AdminPage />} />
         <Route path="*" element={<ErrorPage />} />
+
       </Routes>
       <Footer />
     </div>

@@ -1,6 +1,48 @@
 .admin-page {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+}
+
+.admin-login-form {
+  margin: 120px 0;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.admin-login-title {
+  color: #cba276;
+  font-family: "system-ui";
+  margin-bottom: 16px;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: solid 1px #d9d8d8;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+
+.admin-page-btn {
+  padding: 12px;
+  width: fit-content;
+
+  color: hotpink;
+  background-color: rgb(249, 227, 231);
+
+  border: solid 1px hotpink;
+  border-radius: 16px;
+
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+
+  transition: background-color 0.5s;
+}
+
+.admin-page-btn:hover {
+  cursor: pointer;
+  background-color: rgb(251, 202, 211);
 }

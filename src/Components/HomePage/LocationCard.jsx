@@ -1,7 +1,7 @@
 import "../../Styles/LocationCard.css";
 import peachland from "../../Assets/peachland.webp";
 
-const LocationCard = () => {
+const LocationCard = ({ location }) => {
   return (
     <article className="location-card">
       <img
@@ -17,16 +17,18 @@ const LocationCard = () => {
             rel="noopener noreferrer"
             className="location-title-link"
           >
-            Peachland Farmers and Crafters Market
+            {location.name}
           </a>
         </h1>
         <div className="location-time">
-          <div className="location-date">Friday</div>
-          <div className="location-hours">9am-2pm</div>
+          <div className="location-date">{location.time.days}</div>
+          <div className="location-hours">{location.time.hours}</div>
         </div>
         <div className="location-address">
-          <div>Heritage Park, Beach Ave</div>
-          <div className="location-city">Peachland, BC</div>
+          <div>{location.location.address}</div>
+          <div className="location-city">
+            {location.location.city}, {location.location.province}
+          </div>
         </div>
       </div>
     </article>
